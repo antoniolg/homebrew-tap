@@ -10,7 +10,7 @@ class Postflow < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/antoniolg/postflow/releases/download/v0.1.0/postflow_0.1.0_darwin_amd64.tar.gz"
-      sha256 "1831845a29af46c321169d616a4792399e84ea335158c0fdf2ec4d1dc76474e7"
+      sha256 "abe5ed7dc59bf048360971525ccefa778734125fdf5a445a3cd5aaadcf07889e"
 
       def install
         bin.install "postflow"
@@ -18,7 +18,7 @@ class Postflow < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/antoniolg/postflow/releases/download/v0.1.0/postflow_0.1.0_darwin_arm64.tar.gz"
-      sha256 "181312c1aaca57e792ccf998430e411941b75504c2046be4fc729852f6042a82"
+      sha256 "4fb8c1d36c912802709fc2c58c2d5bc2fd87854899281322efff568cd3f96f47"
 
       def install
         bin.install "postflow"
@@ -29,7 +29,7 @@ class Postflow < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/antoniolg/postflow/releases/download/v0.1.0/postflow_0.1.0_linux_amd64.tar.gz"
-      sha256 "9f0584e999801fef725085726a71c8f50f45733bc4219c992409e1e5eebfdef7"
+      sha256 "a95605e45c89dff20a212cc986a2dce8cb1c354bebf964379840047b02abb61d"
 
       def install
         bin.install "postflow"
@@ -37,7 +37,7 @@ class Postflow < Formula
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/antoniolg/postflow/releases/download/v0.1.0/postflow_0.1.0_linux_arm64.tar.gz"
-      sha256 "567eb9b442765711948e300b032a65e1d5ee39c3571f43332c28eeb5c6102a48"
+      sha256 "45c8baa5e1e095d84de46f12179b838834fe0676c0c332b519d613050868ed52"
 
       def install
         bin.install "postflow"
