@@ -23,6 +23,7 @@ brew install --cask antoniolg/tap/<name>
 ### Formulae
 
 - `justdoit` — Time‑blocking CLI + TUI for Google Tasks and Calendar
+- `listmonk-cli` — CLI for Listmonk campaigns, lists, subscribers, templates, and transactional emails
 
 ## Update / Uninstall
 
