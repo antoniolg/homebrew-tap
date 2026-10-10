@@ -5,21 +5,21 @@
 class RemoteSessions < Formula
   desc "Use your Claude Code sessions from your phone"
   homepage "https://antonioleiva.com/en/projects/remote-sessions"
-  version "0.1.2"
+  version "0.1.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/antoniolg/remote-sessions/releases/download/v0.1.2/remote-sessions_darwin_amd64.tar.gz"
-      sha256 "e8782622719f20e09e675bbe2b9b73b0de154239da30753121285b7661ba09ab"
+      url "https://github.com/antoniolg/remote-sessions/releases/download/v0.1.3/remote-sessions_darwin_amd64.tar.gz"
+      sha256 "6b40050f630aac9d67ba6a3452b99446f291fac26014dcdfc3c7ca422c668a43"
 
       define_method(:install) do
         bin.install "remote-sessions"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/antoniolg/remote-sessions/releases/download/v0.1.2/remote-sessions_darwin_arm64.tar.gz"
-      sha256 "3677fe1a6b8cc46e4c8be24b970f3256bd55b8f129eef6add2716e2b453ea280"
+      url "https://github.com/antoniolg/remote-sessions/releases/download/v0.1.3/remote-sessions_darwin_arm64.tar.gz"
+      sha256 "a51a36526b26d51bc0a5b6d11531bb02dd47047b4dbd43a9c941b3f0fc22d6f6"
 
       define_method(:install) do
         bin.install "remote-sessions"
@@ -29,15 +29,15 @@ class RemoteSessions < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/antoniolg/remote-sessions/releases/download/v0.1.2/remote-sessions_linux_amd64.tar.gz"
-      sha256 "d63a169a468f95d411117d83ab56a729ac5dff9f4291340683cd83f4a6f33911"
+      url "https://github.com/antoniolg/remote-sessions/releases/download/v0.1.3/remote-sessions_linux_amd64.tar.gz"
+      sha256 "4452317637e1d7b7663165724557d020bb73d2c9c18cddfe636f7dc3774660c2"
       define_method(:install) do
         bin.install "remote-sessions"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/antoniolg/remote-sessions/releases/download/v0.1.2/remote-sessions_linux_arm64.tar.gz"
-      sha256 "0f76b7248fb9e4dd9e7b60055ab9758e67824535aaa4782e411b8f2885f9ab1b"
+      url "https://github.com/antoniolg/remote-sessions/releases/download/v0.1.3/remote-sessions_linux_arm64.tar.gz"
+      sha256 "956315645263631d418671726c7368b5c353236fce95825437f209c22fd6bcc8"
       define_method(:install) do
         bin.install "remote-sessions"
       end
