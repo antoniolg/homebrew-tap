@@ -5,20 +5,20 @@
 class Justdoit < Formula
   desc "Time-blocking CLI for Google Tasks and Google Calendar."
   homepage "https://github.com/antoniolg/justdoit"
-  version "0.1.4"
+  version "0.1.5"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/antoniolg/justdoit/releases/download/v0.1.4/justdoit_0.1.4_darwin_amd64.tar.gz"
-      sha256 "98d786d6d1fa3e052af0ddf9abbfeb92232c39238c6838b8e1b62679be7a514e"
+      url "https://github.com/antoniolg/justdoit/releases/download/v0.1.5/justdoit_0.1.5_darwin_amd64.tar.gz"
+      sha256 "b25fe2039114754f1290ddf30d85c2ba97854b20ee5f7e1e018cb92aa49fd267"
 
       define_method(:install) do
         bin.install "justdoit"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/antoniolg/justdoit/releases/download/v0.1.4/justdoit_0.1.4_darwin_arm64.tar.gz"
-      sha256 "e7d7ae8581ab50ffeb3bbef5345e581b98580e058d415c29f644a84810a6c7a5"
+      url "https://github.com/antoniolg/justdoit/releases/download/v0.1.5/justdoit_0.1.5_darwin_arm64.tar.gz"
+      sha256 "58ad060d44acc555428882bcc750ecd9bec6bb02f5fbd80e5c1c34a6840919d5"
 
       define_method(:install) do
         bin.install "justdoit"
@@ -28,15 +28,15 @@ class Justdoit < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/antoniolg/justdoit/releases/download/v0.1.4/justdoit_0.1.4_linux_amd64.tar.gz"
-      sha256 "aac3ac0d18f871112b5a3167dd6955f5efa96eb577bfc4941adb5c28c6add1ae"
+      url "https://github.com/antoniolg/justdoit/releases/download/v0.1.5/justdoit_0.1.5_linux_amd64.tar.gz"
+      sha256 "09ac25022c7b0207af66fae29ee7da4c92bc4b052080bed8a20b74a163abcd2d"
       define_method(:install) do
         bin.install "justdoit"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/antoniolg/justdoit/releases/download/v0.1.4/justdoit_0.1.4_linux_arm64.tar.gz"
-      sha256 "65c07fe67d35d85c83882d9c111c35ebdf9ab870f7b2c37cddfca00b6d115a97"
+      url "https://github.com/antoniolg/justdoit/releases/download/v0.1.5/justdoit_0.1.5_linux_arm64.tar.gz"
+      sha256 "dc9257e6f51d82bff554688b5ba23f29933f93df797c556ff0951eb983e71a84"
       define_method(:install) do
         bin.install "justdoit"
       end
