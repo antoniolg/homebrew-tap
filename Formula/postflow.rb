@@ -5,20 +5,20 @@
 class Postflow < Formula
   desc "CLI for PostFlow publishing workflows."
   homepage "https://github.com/antoniolg/postflow"
-  version "0.6.1"
+  version "0.7.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/antoniolg/postflow/releases/download/v0.6.1/postflow_0.6.1_darwin_amd64.tar.gz"
-      sha256 "3a21567005cfb5f71cb7a9bddbf3941367904e3bf2b494d3cbda27d0a2438bad"
+      url "https://github.com/antoniolg/postflow/releases/download/v0.7.0/postflow_0.7.0_darwin_amd64.tar.gz"
+      sha256 "592e0b8590818071d0dd3d8b72707026b0b2fc0f21f79479caab7f6b6b1e88d2"
 
       def install
         bin.install "postflow"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/antoniolg/postflow/releases/download/v0.6.1/postflow_0.6.1_darwin_arm64.tar.gz"
-      sha256 "2aa8635f2cc93e19a8aaa5096a661a60f7c3f8a97c9592da16f61b821c93a16c"
+      url "https://github.com/antoniolg/postflow/releases/download/v0.7.0/postflow_0.7.0_darwin_arm64.tar.gz"
+      sha256 "43e28abc9ab7b04e958283e9ae5f009b9480c06776eb8f483392fc67535a40df"
 
       def install
         bin.install "postflow"
@@ -28,16 +28,16 @@ class Postflow < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/antoniolg/postflow/releases/download/v0.6.1/postflow_0.6.1_linux_amd64.tar.gz"
-      sha256 "01860443e476c472e2c2f927e2bb517bdb8c0ca37cc13d6bd23f6a8c29931bde"
+      url "https://github.com/antoniolg/postflow/releases/download/v0.7.0/postflow_0.7.0_linux_amd64.tar.gz"
+      sha256 "e8b6fc12743ea706fcbeb1f36b451b77f273b4b2c9ab780250dcde4476061fe6"
 
       def install
         bin.install "postflow"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/antoniolg/postflow/releases/download/v0.6.1/postflow_0.6.1_linux_arm64.tar.gz"
-      sha256 "3413414f159e59a94fc7a20125d484cb98125c2abfbb6a2cae4ea5618f79ff38"
+      url "https://github.com/antoniolg/postflow/releases/download/v0.7.0/postflow_0.7.0_linux_arm64.tar.gz"
+      sha256 "f4466c7beec93f4fd0c77db1467f7d10b53c06f9102da040f8c27d7ef5d1f9a1"
 
       def install
         bin.install "postflow"
